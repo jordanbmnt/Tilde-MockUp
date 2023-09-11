@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+
+html{
+  background-color: #090221;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #090221;
+}
+
+.Burger-Menu {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  color: white;
+}
+
+.Board {
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px 0 0 20px;
+  max-width: 1500px;
+}
+
+.App-header {
+  background-image: linear-gradient(65deg, #130739, #170a43,
+      #160b3c);
+  width: calc(100vw - 1px);
+  min-height: 100px;
+  display: flex;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.078);
+  font-family: 'Sono', sans-serif;
+}
+
+.Nav-Bar {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  position: absolute;
+  margin-left: 10px;
+  left: 0;
+  top: 8vh;
+  z-index: 100;
+  min-height: 80vh;
+  max-height: 80vh;
+  min-width: 80px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 13px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.144);
+  background-image: linear-gradient(65deg, #1a0c48, #240d6e,
+      #090221);
+}
+
+.Profile,
+.Nav-Option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Profile {
+  min-height: 15vh;
+}
+
+.Nav-Option {
+  transform: scale(0.8);
+  box-shadow: -2px 3px 10px -1px rgba(0, 0, 0, 0.529), inset 2px 2px 3px -1px #3f51b554;
+  border: 1px solid rgba(0, 0, 0, 0.046);
+  border-radius: 13px;
+  min-height: 10vh;
+  transition: 300ms;
+}
+
+.Nav-Option:hover {
+  box-shadow: -1px 3px 10px -1px rgba(0, 0, 0, 0.046);
+}
+
+.card {
+  max-width: 80%;
+  margin-left: 10%;
+  border: 1px solid rgba(238, 238, 238, 0.152);
+  position: relative;
+  min-height: 200px;
+  border-radius: 7px;
+  padding: 0 1 rem;
+  background-image: linear-gradient(65deg, #090221, #100632,
+      #090221);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #3b2c68;
+  font-family: 'Montserrat', sans-serif;
+}
+
+card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  z-index: -1;
+  width: 101%;
+  height: 101%;
+  background-image: linear-gradient(71deg, #160d36, #322361,
+      #160d36);
+}
+
+.Close-Button {
+  position: absolute;
+  margin-left: 10px;
+  left: 60px;
+  top: 9vh;
+  z-index: 200;
+  background-color: #3b2c68;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #160b3c4e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #271175ad;
+  border-radius: 17px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #311987;
+}
